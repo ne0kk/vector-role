@@ -1,0 +1,4 @@
+---
+    - name: Restart Vector
+      become: true
+      ansible.builtin.shell: /etc/vector/vector-x86_64-unknown-linux-musl/bin/vector --config /etc/vector/vector.yaml &
